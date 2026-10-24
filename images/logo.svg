@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="Kalkidan e.V. Symbol">
+  <circle cx="60" cy="60" r="56" fill="#174d3a"/>
+  <circle cx="60" cy="60" r="47" fill="none" stroke="#d5a64b" stroke-width="2"/>
+  <path d="M60 89V47" stroke="#f8f2df" stroke-width="5" stroke-linecap="round"/>
+  <path d="M60 65C41 65 31 53 31 39C47 39 58 48 60 65Z" fill="#d5a64b"/>
+  <path d="M60 54C62 36 74 27 91 29C89 45 78 55 60 54Z" fill="#9fc59f"/>
+  <path d="M34 78C43 71 51 71 60 78C69 71 77 71 86 78" fill="none" stroke="#f8f2df" stroke-width="4" stroke-linecap="round"/>
+  <path d="M41 88H79" stroke="#d5a64b" stroke-width="3" stroke-linecap="round"/>
+</svg>
