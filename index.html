@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="Kalkidan e.V. – ቃልኪዳን እድር. Gemeinschaft, gegenseitige Hilfe und Zusammenhalt." name="description"/>
+<title>Home | Kalkidan e.V.</title>
+<link href="images/kalkidan_logo_amharic_correct.png" rel="icon" type="image/svg+xml"/>
+<link href="css/styles.css" rel="stylesheet"/>
+<script defer="" src="js/script.js"></script>
+
+<style>
+/* Startseite: Sonnenkreis kleiner halten und vom unteren Banner-Rand lösen */
+.hero-art {
+  transform: scale(0.86);
+  transform-origin: center center;
+}
+.hero-art .sun {
+  transform: scale(0.88);
+  transform-origin: center center;
+}
+@media (max-width: 760px) {
+  .hero-art {
+    transform: scale(0.78);
+    transform-origin: center center;
+  }
+  .hero-art .sun {
+    transform: scale(0.84);
+    transform-origin: center center;
+  }
+}
+</style>
+
+</head>
+<body>
+<a class="skip-link" data-am="ወደ ዋናው ይዘት ይሂዱ" data-de="Zum Inhalt springen" href="#main">Zum Inhalt springen</a>
+<header class="site-header">
+<div class="container header-inner">
+<a aria-label="Kalkidan e.V. Startseite" class="brand" href="index.html">
+<img alt="Kalkidan e.V. Logo" class="logo" src="images/kalkidan_logo_amharic_correct.png"/>
+<span class="brand-text"><strong>Kalkidan e.V.</strong><small>ቃልኪዳን እድር</small></span>
+</a>
+<button aria-expanded="false" aria-label="Menü öffnen" class="menu-toggle">☰</button>
+<nav aria-label="Hauptnavigation" class="nav">
+<a aria-current="page" data-am="መነሻ ገጽ" data-de="Home" href="index.html">Home</a>
+<a data-am="ስለ እኛ" data-de="Über uns" href="ueber-uns.html">Über uns</a>
+<a data-am="የአመራራ አባላት" data-de="Vorstandsmitglieder" href="vorstandsmitglieder.html">Vorstandsmitglieder</a>
+<a data-am="ዝግጅቶች" data-de="Veranstaltungen" href="veranstaltungen.html">Veranstaltungen</a>
+<a data-am="ማዕከለ ምስሎች/ፎቶዎች" data-de="Bilder" href="bilder.html">Bilder</a>
+<a data-am="ዜና / ማስታወቂያ" data-de="Aktuelles" href="aktuelles.html">Aktuelles</a>
+<a data-am="አባል ይሁኑ" data-de="Mitglied werden" href="mitglied-werden.html">Mitglied werden</a>
+<a data-am="ያግኙን/አድራሻ" data-de="Kontakt" href="kontakt.html">Kontakt</a>
+</nav>
+<button aria-label="Switch language" class="language-toggle" id="languageToggle" type="button">አማርኛ</button>
+</div>
+</header>
+
+<section class="kalkidan-photo-banner" aria-label="Kalkidan Gemeinschafts-Banner">
+  <img src="images/kalkidan-banner.png" alt="Fünf Menschen stehen bei Sonnenuntergang vereint vor einer Berglandschaft">
+  <span class="kalkidan-banner-word word-1" aria-hidden="true">ቃ</span>
+  <span class="kalkidan-banner-word word-2" aria-hidden="true">ል</span>
+  <span class="kalkidan-banner-word word-3" aria-hidden="true">ኪ</span>
+  <span class="kalkidan-banner-word word-4" aria-hidden="true">ዳ</span>
+  <span class="kalkidan-banner-word word-5" aria-hidden="true">ን</span>
+</section>
+<style>
+.kalkidan-photo-banner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background: #263744;
+  line-height: 0;
+}
+.kalkidan-photo-banner img {
+  display: block;
+  width: 100%;
+  height: clamp(105px, 15vw, 190px);
+  object-fit: cover;
+  object-position: center 56%;
+}
+.kalkidan-banner-word {
+  position: absolute;
+  top: 20%;
+  transform: translateX(-50%);
+  line-height: 1;
+  text-align: center;
+  color: #111;
+  font-family: "Noto Sans Ethiopic", "Abyssinica SIL", sans-serif;
+  font-size: clamp(22px, 3.6vw, 46px);
+  font-weight: 700;
+  text-shadow: 0 1px 8px rgba(255,255,255,.7);
+  pointer-events: none;
+}
+.kalkidan-banner-word.word-1 { left: 25.5%; }
+.kalkidan-banner-word.word-2 { left: 37.8%; }
+.kalkidan-banner-word.word-3 { left: 48%; }
+.kalkidan-banner-word.word-4 { left: 60%; }
+.kalkidan-banner-word.word-5 { left: 73%; }
+/* Startseitentext mit ähnlichem Abstand zum Banner wie die Überschrift auf „Über uns“ */
+.hero { min-height: 0 !important; align-items: flex-start !important; flex: 0 0 auto !important; }
+body:has(.hero) > main { flex: 0 0 auto !important; }
+body:has(.hero) .hero { min-height: 0 !important; }
+.hero-content { padding-top: 42px !important; padding-bottom: 34px !important; }
+.hero-art { top: 0; }
+.hero-art .sun { top: 2%; }
+
+@media (max-width: 760px) {
+  .hero-content { padding-top: 30px !important; padding-bottom: 26px !important; }
+}
+
+@media (max-width: 520px) {
+  .kalkidan-banner-word { top: 32%; font-size: clamp(18px, 4.4vw, 28px); }
+}
+</style>
+
+<main id="main"><section class="hero" id="home" style="background-image: linear-gradient(90deg, rgba(255,250,240,.94) 0%, rgba(255,250,240,.82) 48%, rgba(255,250,240,.30) 100%), url('images/home-background.svg'); background-size: cover; background-position: center;">
+<div class="hero-pattern"></div>
+<div class="container hero-content">
+<p class="eyebrow" data-am="ማህበረሰብ • ድጋፍ • አንድነት" data-de="Gemeinschaft • Unterstützung • Zusammenhalt">Gemeinschaft • Unterstützung • Zusammenhalt</p>
+<h1 data-am="በአንድነት ጠንካራ ነን" data-de="Gemeinsam sind wir stärker.">Gemeinsam sind wir stärker.</h1>
+<p class="hero-lead" data-am="ቃልኪዳን እድር ሰዎችን ያቀራርባል፣ ማህበረሰባችንን ያጠናክራል፣ በመከባበርና በአንድነት የጋራ ድጋፍን ያበረታታል።" data-de="Kalkidan e.V. bringt Menschen zusammen, stärkt unsere Gemeinschaft und fördert gegenseitige Hilfe – mit Respekt, Würde und Herz.">Kalkidan e.V. bringt Menschen zusammen, stärkt unsere Gemeinschaft und fördert gegenseitige Hilfe – mit Respekt, Würde und Herz.</p>
+<div class="hero-actions">
+<a class="button button-light" data-am="ስለ እኛ የበለጠ" data-de="Mehr über uns" href="ueber-uns.html">Mehr über uns</a>
+<a class="button button-outline" data-am="አባል ይሁኑ" data-de="Mitglied werden" href="mitglied-werden.html">Mitglied werden</a>
+</div>
+<div class="hero-note"><span class="note-icon">✦</span><span data-am="የግንኙነት፣ የእንክብካቤና የጋራ ድጋፍ ቦታ።" data-de="Ein Ort für Verbindung, Fürsorge und gegenseitige Unterstützung.">Ein Ort für Verbindung, Fürsorge und gegenseitige Unterstützung.</span></div>
+</div>
+<div aria-hidden="true" class="hero-art">
+<div class="sun"></div><div class="art-circle circle-one"></div><div class="art-circle circle-two"></div>
+<div class="hands"><img alt="Hands" height="250" src="images/logo.jpg" style="border-radius: 50%; object-fit: cover;" width="250"/></div>
+<!--<div class="art-caption">አንድነት · Gemeinschaft</div>-->
+</div>
+</section>
+<section class="member-bank-info" aria-labelledby="member-bank-title">
+  <div class="container member-bank-inner">
+    <div class="member-bank-copy">
+      <p class="member-bank-kicker" data-am="ለአባላት መረጃ" data-de="Information für Mitglieder">Information für Mitglieder</p>
+      <h2 id="member-bank-title" data-am="የአባልነት ክፍያ" data-de="Mitgliedsbeitrag">Mitgliedsbeitrag</h2>
+      <p data-am="የአባልነት ክፍያዎን ለመክፈል የባንክ መረጃ።" data-de="Hier findest du die Bankverbindung für die Überweisung deines Mitgliedsbeitrags.">Hier findest du die Bankverbindung für die Überweisung deines Mitgliedsbeitrags.</p>
+    </div>
+    <div class="member-bank-details">
+      <div><span data-am="የሂሳብ ባለቤት" data-de="Kontoinhaber">Kontoinhaber</span><strong>Kalkidan e.V.</strong></div>
+      <div><span>IBAN</span><strong class="iban-placeholder" data-am="DE05 7015 0000 1002 1784 71" data-de="DE05 7015 0000 1002 1784 71">Vereins-IBAN hier eintragen</strong></div>
+      <div><span data-am="የክፍያ ምክንያት" data-de="Verwendungszweck">Verwendungszweck</span><strong data-am="Mitgliedsbeitrag – ID" data-de="Mitgliedsbeitrag – ID">Mitgliedsbeitrag – ID</strong></div>
+    </div>
+  </div>
+</section></main>
+<footer class="footer">
+<div class="container footer-inner"><a class="footer-brand" href="index.html">Kalkidan e.V. <span>· ቃልኪዳን እድር</span></a><p data-am="አንድ ማህበረሰብ። እርስ በርሳችን እንደጋገፋለን።" data-de="Eine Gemeinschaft. Füreinander da.">Eine Gemeinschaft. Füreinander da.</p><small>© <span id="year"></span> Kalkidan e.V.</small><nav class="footer-legal" aria-label="Rechtliche Informationen"><a href="datenschutz.html">Datenschutz</a><a href="impressum.html">Impressum</a></nav></div>
+</footer>
+
+</body>
+</html>

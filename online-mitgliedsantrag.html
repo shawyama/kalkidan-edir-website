@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta name="description" content="Online-Mitgliedsantrag von Kalkidan e.V."/>
+<title>Online-Mitgliedsantrag | Kalkidan e.V.</title>
+<link href="images/kalkidan_logo_amharic_correct.png" rel="icon" type="image/png"/>
+<link href="css/styles.css" rel="stylesheet"/>
+<script defer src="js/script.js"></script>
+<style>
+.application-page { padding: 34px 0 56px; }
+.application-layout { display:grid; grid-template-columns:320px minmax(0,1fr); gap:26px; align-items:start; }
+.application-sidebar { position:sticky; top:18px; border:1px solid var(--line); border-radius:14px; padding:20px; background:var(--surface,#fffdf8); }
+.application-sidebar h2 { margin:0 0 14px; font-size:1.15rem; color:var(--green); }
+.application-sidebar ol { margin:0; padding-left:22px; }
+.application-sidebar li { margin:0 0 12px; line-height:1.4; }
+.application-sidebar .application-topic { display:block; color:var(--ink); cursor:default; text-decoration:none; }
+.application-sidebar .application-nav-note { font-size:.88rem; color:var(--muted); margin-top:16px; }
+.application-form-panel { min-width:0; border:1px solid var(--line); border-radius:14px; padding:22px; background:var(--surface,#fffdf8); }
+.application-form-panel h1 { margin-top:0; color:var(--green); }
+.application-form-frame { width:100%; height: min(78vh, 1100px); min-height:700px; border:0; background:white; }
+.application-help { margin-bottom:18px; }
+@media(max-width:760px) {
+ .application-layout { grid-template-columns:1fr; }
+ .application-sidebar { position:relative; top:auto; }
+ .application-sidebar ol { columns:2; column-gap:24px; }
+ .application-sidebar li { break-inside:avoid; }
+ .application-form-panel { padding:14px; }
+ .application-form-frame { min-height:650px; height:78vh; }
+}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Zum Inhalt springen</a>
+<header class="site-header">
+<div class="container header-inner">
+<a aria-label="Kalkidan e.V. Startseite" class="brand" href="index.html">
+<img alt="Kalkidan e.V. Logo" class="logo" src="images/kalkidan_logo_amharic_correct.png"/>
+<span class="brand-text"><strong>Kalkidan e.V.</strong><small>ቃልኪዳን እድር</small></span>
+</a>
+<button aria-expanded="false" aria-label="Menü öffnen" class="menu-toggle">☰</button>
+<nav aria-label="Hauptnavigation" class="nav">
+<a href="index.html" data-am="ማነሻ ገጽ" data-de="Home">Home</a>
+<a href="ueber-uns.html" data-am="ስለ እኛ" data-de="Über uns">Über uns</a>
+<a href="vorstandsmitglieder.html" data-am="የአመራራ አባላት" data-de="Vorstandsmitglieder">Vorstandsmitglieder</a>
+<a href="veranstaltungen.html" data-am="ዝግጅቶች" data-de="Veranstaltungen">Veranstaltungen</a>
+<a href="bilder.html" data-am="ማዕከለ ምስሎች/ፎቶዎች" data-de="Bilder">Bilder</a>
+<a href="aktuelles.html" data-am="ዜና / ማስታወቂያ" data-de="Aktuelles">Aktuelles</a>
+<a aria-current="page" href="mitglied-werden.html" data-am="አባል ይሁኑ" data-de="Mitglied werden">Mitglied werden</a>
+<a href="kontakt.html" data-am="ያግኙን/አድራሻ" data-de="Kontakt">Kontakt</a>
+</nav>
+<button aria-label="Switch language" class="language-toggle" id="languageToggle" type="button">አማርኛ</button>
+</div>
+</header>
+<main id="main" class="application-page">
+<div class="container">
+<div class="application-layout">
+<aside class="application-sidebar" aria-label="Übersicht der Formularabschnitte">
+<h1 data-de="Information" data-am="ፎርሙን ለመሙላት መመርያ">Mitgliedsantrag</h1>
+<p data-de="Diese Übersicht zeigt die einzelnen Abschnitte des Mitgliedsantrags. Die Menüpunkte dienen nur zur Information und sind nicht anklickbar. Im Google-Formular wechseln Sie mit „Weiter“ und „Zurück“ zwischen den Abschnitten." data-am="ይህ ዝርዝር የአባልነት ማመልከቻውን ክፍሎች ለማሳየት ብቻ ነው፤ ሊጫኑ አይችሉም። በGoogle Forms ውስጥ በ‘ቀጣይ’ እና ‘ተመለስ’ ቁልፎች መካከል ይንቀሳቀሱ።">Diese Übersicht zeigt die einzelnen Abschnitte des Mitgliedsantrags. Die Menüpunkte dienen nur zur Information und sind nicht anklickbar. Im Google-Formular wechseln Sie mit „Weiter“ und „Zurück“ zwischen den Abschnitten.</p>
+<ol>
+<li><span class="application-topic">Persönliche Angaben</span></li>
+<li><span class="application-topic">Kontaktdaten</span></li>
+<li><span class="application-topic">Anschrift</span></li>
+<li><span class="application-topic">Mitgliedschaft</span></li>
+<li><span class="application-topic">Erklärungen und Einwilligungen</span></li>
+<li><span class="application-topic">Prüfen und absenden</span></li>
+</ol>
+<a class="button button-outline" href="mitglied-werden.html">Zurück zu Mitglied werden</a>
+</aside>
+<section class="application-form-panel" id="online-form">
+<h1>Online-Mitgliedsantrag</h1>
+<p class="application-help" id="form-topic-help" data-de="Bitte füllen Sie das Formular Schritt für Schritt aus. Die Übersicht links dient zur Orientierung; die einzelnen Abschnitte können nicht direkt über diese Menüpunkte geöffnet werden. Nutzen Sie im Google-Formular „Weiter“ und „Zurück“, um zwischen den Abschnitten zu wechseln." data-am="እባክዎ ቅጹን በደረጃ በደረጃ ይሙሉ። በግራ ያለው ዝርዝር ለመመሪያ ብቻ ነው፤ ከእነዚህ ክፍሎች በቀጥታ መክፈት አይቻልም። በGoogle Forms ውስጥ ‘ቀጣይ’ እና ‘ተመለስ’ ቁልፎችን ይጠቀሙ።">Bitte füllen Sie das Formular Schritt für Schritt aus. Die Übersicht links dient zur Orientierung; die einzelnen Abschnitte können nicht direkt über diese Menüpunkte geöffnet werden. Nutzen Sie im Google-Formular „Weiter“ und „Zurück“, um zwischen den Abschnitten zu wechseln.</p>
+<iframe class="application-form-frame" title="Online-Mitgliedsantrag" src="https://docs.google.com/forms/d/e/1FAIpQLSfdxz2WXqMelQDb9wybOEiuUibomR7UJEIskThhCGluB-9y_w/viewform?embedded=true" loading="eager" allowfullscreen>Dieses Formular kann in Ihrem Browser nicht angezeigt werden. <a href="https://docs.google.com/forms/d/e/1FAIpQLSfdxz2WXqMelQDb9wybOEiuUibomR7UJEIskThhCGluB-9y_w/viewform" target="_blank" rel="noopener noreferrer">Formular separat öffnen</a>.</iframe>
+</section>
+</div>
+</div>
+</main>
+
+<footer class="footer">
+<div class="container footer-inner"><a class="footer-brand" href="index.html">Kalkidan e.V. <span>· ቃልኪዳን እድር</span></a><p>Eine Gemeinschaft. Füreinander da.</p><small>© <span id="year"></span> Kalkidan e.V.</small><nav class="footer-legal" aria-label="Rechtliche Informationen"><a href="datenschutz.html">Datenschutz</a><a href="impressum.html">Impressum</a></nav></div>
+</footer>
+</body>
+</html>
